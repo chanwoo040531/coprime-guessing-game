@@ -6,8 +6,8 @@ let guessedNumbers = new Set();
 
 export function initGame() {
     maxNum = parseInt(document.getElementById('maxNumber').value);
-    if (maxNum < 2) {
-        document.getElementById('maxNumberError').textContent = 'Please enter a number greater than or equal to 2';
+    if (maxNum < 4) {
+        document.getElementById('maxNumberError').textContent = 'Please enter a number greater than or equal to 4';
         return;
     }
     document.getElementById('maxNumberError').textContent = '';
